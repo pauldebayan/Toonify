@@ -1,0 +1,7 @@
+counter=1
+IFS=$'\n'
+for file in *.jpg; do
+    convert "$file" -resize 512x512 "$counter.jpg"
+    rm "$file"
+    counter=$((counter + 1))
+done

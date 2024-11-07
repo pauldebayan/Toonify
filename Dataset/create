@@ -1,0 +1,7 @@
+for i in {537..1000}
+do
+  echo $i
+  wget -O img.jpg https://thispersondoesnotexist.com/
+  convert img.jpg -resize 512x512 $i.jpg
+  rm img.jpg
+done

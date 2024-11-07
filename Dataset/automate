@@ -1,0 +1,24 @@
+#adb shell ls /sdcard/Pictures
+
+#adb shell monkey -p com.lyrebirdstudio.toonart -c android.intent.category.LAUNCHER 1
+
+for i in {999..1000}
+do
+  echo $i
+
+  adb push Create/$i.jpg /sdcard/Picture/ 
+
+  #adb shell rm -rf /sdcard/Picture/* 
+
+  #adb pull /sdcard/Pictures/ . 
+
+  #convert +append Create/$i.jpg $out _$i.jpg 
+
+done
+
+
+
+
+
+
+
