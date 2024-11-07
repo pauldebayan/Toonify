@@ -4,5 +4,6 @@ output
 *.onnx
 images
 new_images
-*.zip
+images.zip
+new_images.zip
 
