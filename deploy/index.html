@@ -13,7 +13,7 @@
     const context = canvas.getContext("2d", { willReadFrequently: true });
 
     const callSession = async function(){
-      window.session = await ort.InferenceSession.create('4.onnx')
+      window.session = await ort.InferenceSession.create('6.onnx')
     }
 
     callSession();
