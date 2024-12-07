@@ -1,0 +1,5 @@
+for i in {1145..1200}
+do
+    adb shell rm /sdcard/Picture/$i.jpg 
+done
+

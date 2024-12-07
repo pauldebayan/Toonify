@@ -1,4 +1,4 @@
-counter=537
+counter=1145
 
 for file in $(ls -v *.png); do
     convert "$file" "${file%.png}.jpg"

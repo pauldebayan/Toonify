@@ -1,0 +1,30 @@
+canvas {
+    border: 2px dashed #ccc;
+    background-color: #fff;
+}
+.canvas-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.download-image {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+.upload-image{
+    background-color: #007BFF;
+    color: #fff;    
+    width: 512px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+.upload-logo{
+    display: none
+}

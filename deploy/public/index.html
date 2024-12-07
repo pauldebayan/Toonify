@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toonify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+    <div class="canvas-wrapper">
+      <canvas class="canvas" width="512px" height="512px" id="canvas"></canvas>
+      <div id="download-image" class="download-image" onclick="downloadImage()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></div>
+    </div>
+    <br/>
+      
+      <button id="upload-image" class="upload-image" onclick="uploadButton()" disabled>Loading ... </button>
+
+      <input style="display: none" type="file" id="imageUpload" accept="image/*">
+        
+    <br/><br/>
+    Please wait 30 seconds for the ML model to load.<br/>
+    This project is managed by: Debayan Paul <a href="https://www.linkedin.com/in/pauldebayan/">LinkedIn</a>
+    
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyD9cr_vLumO3mZPV-XfzY_Rnmw-frVvVHM",
+        authDomain: "toon-ify.firebaseapp.com",
+        projectId: "toon-ify",
+        storageBucket: "toon-ify.firebasestorage.app",
+        messagingSenderId: "463915800520",
+        appId: "1:463915800520:web:321c48a73b0ff690c312fd",
+        measurementId: "G-XHKP7F7KW6"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>

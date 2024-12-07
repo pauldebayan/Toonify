@@ -1,4 +1,4 @@
-for i in {975..1000}
+for i in {1001..1200}
 do
   echo $i.jpg, 1 >> labels.csv
 done

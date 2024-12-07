@@ -1,3 +1,5 @@
+Toonify_Create_Dataset/
+Addition/
 #*.pt
 input
 output
@@ -6,4 +8,7 @@ images
 new_images
 images.zip
 new_images.zip
+.firebaserc
+.gitignore
+firebase.json
 

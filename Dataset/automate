@@ -2,7 +2,7 @@
 
 #adb shell monkey -p com.lyrebirdstudio.toonart -c android.intent.category.LAUNCHER 1
 
-for i in {999..1000}
+for i in {1201..1388}
 do
   echo $i
 
